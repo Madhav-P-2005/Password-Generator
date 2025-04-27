@@ -8,7 +8,7 @@ It also includes **form validation** using **Yup** and **Formik**, and allows co
 
 ## 📱 Preview
 
-![Password Generator App Preview](Preview.png)
+![Password Generator App Preview](MyApp/Preview.png)
 
 ---
 
