@@ -1,107 +1,99 @@
-# 🔐 Password Generator App - React Native 🚀
+# 🔐 Password Generator App (React Native)
 
-A sleek and fully customizable **Password Generator** built with [React Native](https://reactnative.dev). Easily generate strong, secure passwords on the go, with control over character length, complexity, and types.
+This is a **React Native Password Generator App** that allows users to generate strong, customizable passwords based on selected criteria like lowercase letters, uppercase letters, numbers, and symbols.  
+It also includes **form validation** using **Yup** and **Formik**, and allows copying the generated password to the clipboard easily.
 
 ---
+
 
 ## 📱 Preview
 
-<img src="https://github.com/your-username/Password-Generator/assets/demo.gif" width="250" alt="Password Generator App Demo" />
-
-> *(Optional: Add your own demo GIF or screenshots here)*
+![Password Generator App Preview](MyApp/Preview.png)
 
 ---
 
-## 🧠 Features
+## 📦 Installation
 
-✅ Generate secure random passwords  
-✅ Choose password length  
-✅ Toggle: Uppercase, Lowercase, Numbers, Symbols  
-✅ Copy password to clipboard  
-✅ Responsive, lightweight UI  
-✅ Works on both Android and iOS  
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repository-url>
+   cd <your-project-folder>
+   ```
+
+2. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Install additional libraries:**
+   ```bash
+   npm install yup formik react-native-bouncy-checkbox @react-native-clipboard/clipboard
+   ```
+
+4. **Link native dependencies (only if needed):**
+   ```bash
+   npx react-native link
+   ```
+
+---
+
+## ⚙️ Features
+
+- ✅ Set password length (validated using Yup).
+- ✅ Choose to include:
+  - Lowercase Letters (a-z)
+  - Uppercase Letters (A-Z)
+  - Numbers (0-9)
+  - Symbols (!@#$%^&*()_+)
+- ✅ Copy the generated password to clipboard.
+- ✅ Form validation with **Formik** and **Yup**.
+- ✅ Reset form and password easily.
+- ✅ Clean and modern UI.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- ⚛️ React Native  
-- 💅 Styled Components / React Native Styles  
-- 📦 Expo Clipboard / React Native Clipboard API (optional)  
-- 🔀 JavaScript logic for generation
+- **React Native**
+- **Formik** (for form handling)
+- **Yup** (for schema validation)
+- **@react-native-clipboard/clipboard** (to copy to clipboard)
+- **react-native-bouncy-checkbox** (for attractive checkboxes)
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Learning Points
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/Password-Generator.git
-cd Password-Generator
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Run the app
-
-#### Android:
-
-```bash
-npx react-native run-android
-```
-
-#### iOS (macOS only):
-
-```bash
-npx pod-install
-npx react-native run-ios
-```
+- Setting up Formik with Yup for form validation.
+- Creating dynamic strings based on user selection.
+- Copying text to the clipboard.
+- Managing React Native UI components and styling.
 
 ---
 
-## 📂 Project Structure
+## 🚀 How to Run the App
 
-```plaintext
-📁 components/        → UI components
-📁 assets/            → Images, icons (if any)
-📄 App.js             → Main app entry
-📄 generator.js       → Password logic (optional split)
-```
+- Run on Android:
+  ```bash
+  npx react-native run-android
+  ```
 
----
-
-## 🧪 How Passwords Are Generated
-
-The app uses a random selection algorithm to pull characters from:
-
-- Uppercase Letters: `A-Z`
-- Lowercase Letters: `a-z`
-- Numbers: `0-9`
-- Symbols: `!@#$%^&*()_+-=[]{};:'",.<>?/`
-
-You can toggle these options and generate fresh passwords in one tap.
-
----
-
-## 📸 Screenshots
-
-> *(Replace with real screenshots once available)*
-
-| Home Screen | Generated Password |
-|-------------|--------------------|
-| ![](assets/screen1.png) | ![](assets/screen2.png) |
+- Run on iOS (MacOS required):
+  ```bash
+  npx react-native run-ios
+  ```
 
 ---
 
 ## 📚 Resources & Learning Path
 
-🎥 [React Native Mastery Course by Hitesh Choudhary](https://youtu.be/kGtEax1WQFg?si=FUApkKlAI_QWQMAk)  
-📘 [React Native Docs](https://reactnative.dev/docs/getting-started)
+- 🎥 [React Native Mastery Course by Hitesh Choudhary](https://youtu.be/kGtEax1WQFg?si=FUApkKlAI_QWQMAk)
+- 📘 [React Native Official Documentation](https://reactnative.dev/docs/getting-started)
+- 📘 [Yup (Schema Validation) Documentation](https://www.npmjs.com/package/yup)
+- 📘 [Formik (Forms Handling) Documentation](https://formik.org/docs/overview)
+- 📘 [React Native Bouncy Checkbox (NPM)](https://www.npmjs.com/package/react-native-bouncy-checkbox)
+- 📘 [React Native Clipboard (NPM)](https://www.npmjs.com/package/@react-native-clipboard/clipboard)
+- 🎨 [UIColor Picker (LearnCodeOnline)](https://www.uicolorpicker.learncodeonline.in/)
 
 ---
 
@@ -111,22 +103,11 @@ This app is part of my journey following the [**React Native Mastery Course**](h
 
 ---
 
-## 📌 License
+## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-> Made with 🔥 & ☕ while learning React Native.
-```
+This project is open-source and free to use for learning purposes.  
+Feel free to fork, modify, and improve! 🤝
 
 ---
 
-### ✅ Bonus Tips:
-- You can customize the `📱 Preview` section with a short screen recording (`.gif`) or screenshots.
-- If you use clipboard functionality, add the related library like:
-  ```bash
-  npm install @react-native-clipboard/clipboard
-  ```
-
-Let me know if you want help building out the `password generator logic` or designing the UI!
+> Built with ❤️ using React Native
